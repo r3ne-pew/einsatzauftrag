@@ -290,7 +290,7 @@ function App() {
       <header className="topbar screen-only">
         <a className="brand" href="#start" aria-label="Einsatzauftrag Start">
           <span className="brand-mark"><ClipboardList size={20} /></span>
-          <span className="brand-copy"><strong>Einsatzauftrag</strong><small>FORMBLATT FÜ 3 · THW</small></span>
+          <span className="brand-copy"><strong>Einsatzauftrag</strong></span>
         </a>
         <div className="topbar-tools">
           <div className="setting-group" aria-label="Oberflächen-Design">
@@ -324,16 +324,6 @@ function App() {
       )}
 
       <main className="editor screen-only" id="start">
-        <div className="document-heading">
-          <div className="eyebrow"><span /> THW · EINSATZAUFTRAG</div>
-          <div className="heading-row">
-            <div>
-              <h1>{auftrag.thw.einsatz || 'Einsatzauftrag'}</h1>
-              <p className="document-subtitle">Ein Formular · automatisch lokal gespeichert · PDF nach Formblatt Fü 3</p>
-            </div>
-            <div className="reference-mark"><strong>Fb Fü 3</strong><span>Technisches Hilfswerk</span></div>
-          </div>
-        </div>
         {speicherFehler && <p className="error-message" role="alert">{speicherFehler}</p>}
         <ThwEditor data={auftrag.thw} onChange={aktualisiereThwFeld} />
         <footer className="editor-footer">

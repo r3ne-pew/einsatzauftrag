@@ -112,13 +112,9 @@ button {
 }
 .brand-copy strong {
   font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  font-size: 18px;
+  font-size: 26px;
+  line-height: 1.15;
   font-weight: 600;
-}
-.brand-copy small {
-  color: #c4cec4;
-  font-size: 9px;
-  font-weight: 700;
 }
 .topbar-tools {
   display: flex;
@@ -258,58 +254,6 @@ button {
   width: min(100% - 40px, 940px);
   margin: 0 auto;
   padding: 36px 0 70px;
-}
-.document-heading {
-  padding: 0 0 22px;
-  border-bottom: 1px solid var(--line);
-}
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 800;
-}
-.eyebrow span {
-  width: 7px;
-  height: 7px;
-  background: var(--signal);
-}
-.heading-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 12px;
-}
-.heading-row h1 {
-  margin: 0;
-  color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  font-size: clamp(28px, 4vw, 36px);
-  font-weight: 500;
-  line-height: 1.15;
-  overflow-wrap: anywhere;
-}
-.document-subtitle {
-  margin: 7px 0 0;
-  color: var(--muted);
-  font-size: 11px;
-}
-.reference-mark {
-  flex: 0 0 auto;
-  display: grid;
-  justify-items: end;
-  gap: 4px;
-  color: var(--muted);
-  font-size: 10px;
-}
-.reference-mark strong {
-  padding: 6px 9px;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  background: var(--surface);
 }
 .thw-form {
   padding-top: 22px;
@@ -724,18 +668,6 @@ button {
   .editor {
     width: calc(100% - 22px);
     padding: 19px 0 40px;
-  }
-  .heading-row {
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .heading-row h1 {
-    font-size: 28px;
-  }
-  .reference-mark {
-    max-width: 105px;
-    font-size: 9px;
-    text-align: right;
   }
   .head-grid {
     grid-template-columns: minmax(0, 1fr) minmax(86px, 0.65fr);
