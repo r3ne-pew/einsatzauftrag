@@ -33,8 +33,10 @@ Im NGINX Proxy Manager einen Proxy Host fuer `einsatzauftrag.app` anlegen und al
 Image-Name und Tag koennen ueberschrieben werden:
 
 ```sh
-IMAGE_NAME=registry.example/einsatzauftrag IMAGE_TAG=2026.10.28 sh scripts/build-docker.sh
+IMAGE_NAME=registry.example/einsatzauftrag IMAGE_TAG=20261028 sh scripts/build-docker.sh
 ```
+
+Das Script taggt das Image sowohl mit dem Tages-Tag als auch mit `latest` und pusht beide. Danach kann die Beispiel-Compose-Datei mit `docker compose -f docker-compose.yml.example pull && docker compose -f docker-compose.yml.example up -d` gestartet werden.
 
 NGINX liefert gehashte Assets mit langem Cache, waehrend App-Shell, Manifest und Service Worker neu validiert werden. Der SPA-Fallback ist aktiviert, und der Container laeuft ohne root-Rechte.
 
