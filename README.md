@@ -43,3 +43,7 @@ NGINX liefert gehashte Assets mit langem Cache, waehrend App-Shell, Manifest und
 ## Daten
 
 Der aktuelle Entwurf liegt unter einem versionierten Schluessel in `localStorage` dieses Browsers. Browserdaten koennen durch Einstellungen oder Speicherbereinigung geloescht werden. Fuer wichtige Einsaetze daher zusaetzlich die Druckansicht verwenden. Es werden keine Auftragsdaten an einen Server uebermittelt.
+
+## Lizenz
+
+Dieses Projekt steht unter der European Union Public Licence (EUPL) Version 1.2. Den offiziellen Lizenztext stellt die Europaeische Kommission unter [EUPL-1.2](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) bereit.
