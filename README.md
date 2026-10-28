@@ -28,6 +28,8 @@ sh scripts/build-docker.sh
 docker run -d --name einsatzauftrag --restart unless-stopped -p 8080:8080 einsatzauftrag:latest
 ```
 
+Ein fertiges Image gibt es unter https://hub.docker.com/r/r3ne/einsatzauftrag
+
 Im NGINX Proxy Manager einen Proxy Host fuer `einsatzauftrag.app` anlegen und als Ziel den Docker-Host mit Port `8080` eintragen. Sind App und Proxy Manager in einem gemeinsamen Docker-Netz, kann der Containername `einsatzauftrag` als Zielhost verwendet werden; andernfalls die erreichbare Host-IP. SSL/TLS im Proxy Manager aktivieren und „Force SSL“ einschalten. Die App benoetigt keine WebSocket-Option.
 
 Image-Name und Tag koennen ueberschrieben werden:
