@@ -379,6 +379,7 @@ function App() {
         <nav aria-label="Rechtliche Informationen">
           <a href="https://r3ne.de/IMPRESSUM/index.html" target="_blank" rel="noreferrer">Impressum</a>
           <a href="https://r3ne.de/DATENSCHUTZ/index.html" target="_blank" rel="noreferrer">Datenschutz</a>
+          <a href="https://github.com/r3ne-pew/einsatzauftrag" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </footer>
       <span className="sr-only"><Datum value={auftrag.geaendertAm} /></span>
